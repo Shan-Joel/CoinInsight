@@ -160,7 +160,7 @@ em { font-style: normal; font-family: var(--sans); font-weight: 800; color: var(
   display: flex;
   flex-direction: column;
 }
-.phone-statusbar { height: 18px; flex: none; } /* top breathing room / status area */
+.phone-statusbar { height: 4px; flex: none; } /* top breathing room / status area */
 .phone-screen img { width: 100%; display: block; }
 .phone-home { height: 22px; flex: none; display: grid; place-items: center; } /* iOS home indicator */
 .phone-home span {
