@@ -3,13 +3,13 @@ import { Icon, Phone, StoreBadge, Wordmark } from './components';
 const GITHUB = 'https://github.com/Shan-Joel/CoinInsight';
 
 const FEATURES = [
-  { icon: 'scan', title: 'AI identification', text: 'Point your camera at a coin and Claude reads the strike — name, country, year, metal, value range, rarity and confidence.' },
+  { icon: 'scan', title: 'AI identification', text: 'Point your camera at a coin and AI reads the strike — name, country, year, metal, value range, rarity and confidence.' },
   { icon: 'book', title: 'Every coin’s story', text: 'A short, specific history is written for each coin — and you can chat with an on-demand numismatic expert about it.' },
   { icon: 'search', title: 'A vault that scales', text: 'Search, filter by metal or rarity, sort by value or year, and star your favorites across the whole collection.' },
   { icon: 'chart', title: 'Portfolio dashboard', text: 'Total value front-and-center, allocation by country, your top metal, and the five most valuable pieces you own.' },
   { icon: 'lock', title: 'Private by default', text: 'A 4-digit vault passcode guards the app, and your entire collection lives only on your device.' },
   { icon: 'share', title: 'Share collectible cards', text: 'Export any coin as a beautifully composed card — fonts, gold leaf and all — ready to post anywhere.' },
-  { icon: 'shield', title: 'Key-safe AI', text: 'Claude runs behind a serverless proxy, so API keys never ship inside the app. Secure by design.' },
+  { icon: 'shield', title: 'Key-safe AI', text: 'AI runs behind a serverless proxy, so API keys never ship inside the app. Secure by design.' },
   { icon: 'gem', title: 'Crafted to feel premium', text: 'A warm “collector’s vault” aesthetic with glass panels, gold accents, haptics and fluid motion throughout.' },
 ];
 
@@ -39,7 +39,7 @@ const SHOWCASE = [
 
 const STEPS = [
   { n: '01', title: 'Snap', text: 'Point the in-app camera at a coin, or pick a photo from your library.' },
-  { n: '02', title: 'Identify', text: 'Claude reads the design and mintmark and returns the details and value.' },
+  { n: '02', title: 'Identify', text: 'AI reads the design and mintmark and returns the details and value.' },
   { n: '03', title: 'Collect', text: 'One tap drops it into your private vault — analytics update instantly.' },
 ];
 
@@ -73,14 +73,14 @@ export default function Page() {
           </h1>
           <p className="hero-sub">
             CoinInsight identifies coins from a single photo, writes their history, and curates them
-            into a premium, private collector’s vault — powered by Claude.
+            into a premium, private collector’s vault.
           </p>
 
           <div className="store-row">
             <StoreBadge store="apple" />
             <StoreBadge store="google" />
           </div>
-          <p className="hero-note">Coming soon to iOS &amp; Android · open-source on GitHub</p>
+          <p className="hero-note">Coming soon to iOS &amp; Android</p>
         </div>
 
         <div className="hero-art reveal delay-2" aria-hidden>
@@ -93,7 +93,7 @@ export default function Page() {
 
       {/* ---------- Trust strip ---------- */}
       <section className="container strip">
-        <div className="strip-item"><Icon name="sparkle" size={18} /> Claude Haiku vision</div>
+        <div className="strip-item"><Icon name="sparkle" size={18} /> AI vision</div>
         <div className="strip-item"><Icon name="lock" size={18} /> Local-first &amp; private</div>
         <div className="strip-item"><Icon name="gem" size={18} /> Built with React Native + Expo</div>
         <div className="strip-item"><Icon name="shield" size={18} /> Key-safe serverless AI</div>
@@ -167,7 +167,7 @@ export default function Page() {
             </p>
             <div className="security-tags">
               <span><Icon name="lock" size={16} /> Passcode vault</span>
-              <span><Icon name="shield" size={16} /> Server-side keys</span>
+              {/* <span><Icon name="shield" size={16} /> Server-side keys</span> */}
               <span><Icon name="gem" size={16} /> On-device storage</span>
             </div>
           </div>
