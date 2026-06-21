@@ -1,0 +1,8 @@
+name = "coininsight-proxy"
+main = "src/index.js"
+compatibility_date = "2025-05-01"
+
+# Secrets are NOT set here — use:
+#   npx wrangler secret put ANTHROPIC_API_KEY
+#   npx wrangler secret put APP_TOKEN        # optional
+# For local `wrangler dev`, put them in worker/.dev.vars instead (git-ignored).
